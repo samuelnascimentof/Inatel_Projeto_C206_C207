@@ -31,7 +31,7 @@ public class LoginController {
                 // Redireciona para a tela principal passando o cliente e a tela de login
                 MainMenuCliente menuCliente = new MainMenuCliente((Cliente) pessoa, view);
                 return true;
-            } else if (pessoa.getClass().getSimpleName() == "Gerente") {
+            } else if (classe.equals("Gerente")) {
                 // Redireciona para a tela principal passando o gerente e a tela de login
                 MainMenuGerente menuGerente = new MainMenuGerente((Gerente) pessoa, view);
                 return true;

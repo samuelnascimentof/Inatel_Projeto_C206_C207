@@ -42,6 +42,7 @@ public class MainMenuCliente {
             System.out.println("| 3 - Transferência                                                             ");
             System.out.println("| 4 - Extrato                                                                   ");
             System.out.println("| 5 - Encerrar conta                                                            ");
+            System.out.println("| 6 - Mostrar informações                                                       ");
             System.out.println("|                                                                               ");
             System.out.println("| 0 - Sair                                                                      ");
             System.out.println("|                                                                               ");
@@ -99,6 +100,9 @@ public class MainMenuCliente {
                     break;
                 case 5:
                     DatabaseController.deleteCliente(cliente);
+                    break;
+                case 6:
+                    cliente.mostrarInformacoes();
                     break;
                 case 0:
                     break;

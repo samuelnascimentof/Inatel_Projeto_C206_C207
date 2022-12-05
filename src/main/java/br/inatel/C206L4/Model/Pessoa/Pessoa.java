@@ -4,6 +4,7 @@ import br.inatel.C206L4.Model.Endereco;
 import br.inatel.C206L4.Model.Telefone;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 import java.util.*;
 
@@ -129,5 +130,14 @@ public abstract class Pessoa {
 
     public int getSenha() {
         return senha;
+    }
+
+    public void mostrarInformacoes() {
+        System.out.println("\nNome: " + this.nome);
+        System.out.println("Sobrenome: " + this.sobrenome);
+        System.out.println("CPF: " + this.cpf);
+        System.out.println("Data de nascimento: " + dataNascimento.format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
+        System.out.println("Endereco: \n" + this.endereco);
+        System.out.println("Contatos: \n" + this.listarContatos());
     }
 }
