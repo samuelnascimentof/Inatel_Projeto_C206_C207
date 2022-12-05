@@ -1,7 +1,5 @@
 package br.inatel.C206L4.DAO;
 
-import br.inatel.C206L4.Model.Cliente;
-
 import java.sql.*;
 
 public class DatabaseConnection implements AutoCloseable {

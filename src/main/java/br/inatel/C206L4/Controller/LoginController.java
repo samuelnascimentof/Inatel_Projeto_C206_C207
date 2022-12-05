@@ -1,8 +1,14 @@
 package br.inatel.C206L4.Controller;
 
+import br.inatel.C206L4.DAO.DatabaseController;
+import br.inatel.C206L4.Exception.PessoaInexistenteException;
+import br.inatel.C206L4.Model.Pessoa.Cliente;
+import br.inatel.C206L4.Model.Pessoa.Funcionario.Gerente;
+import br.inatel.C206L4.Model.Pessoa.Pessoa;
 import br.inatel.C206L4.Util.ConsoleUtil;
 import br.inatel.C206L4.View.Login;
 import br.inatel.C206L4.View.MainMenuCliente;
+import br.inatel.C206L4.View.MainMenuGerente;
 
 public class LoginController {
     private Login view;
@@ -11,16 +17,26 @@ public class LoginController {
     }
 
     public boolean logar(long cpf, int senha) {
-        // TODO Adicionar consulta de login ao banco de dados - pesquisa apenas pelo CPF
-
-        if(/* Consulta ok */ false) {
-            ConsoleUtil.clearConsole();
-
-            // Redireciona para a tela principal passando o cpf
-            MainMenuCliente menuCliente = new MainMenuCliente(cpf);
-            return true;
-        } else {
+        Pessoa pessoa = null;
+        try {
+            pessoa = DatabaseController.buscarCPF(cpf);
+        } catch (PessoaInexistenteException e) {
             return false;
         }
+        if(pessoa.getSenha() == senha) {
+            ConsoleUtil.clearConsole();
+            // Verifica se é cliente ou gerente
+            String classe = pessoa.getClass().getSimpleName();
+            if (classe.equals("Cliente")) {
+                // Redireciona para a tela principal passando o cliente e a tela de login
+                MainMenuCliente menuCliente = new MainMenuCliente((Cliente) pessoa, view);
+                return true;
+            } else if (pessoa.getClass().getSimpleName() == "Gerente") {
+                // Redireciona para a tela principal passando o gerente e a tela de login
+                MainMenuGerente menuGerente = new MainMenuGerente((Gerente) pessoa, view);
+                return true;
+            }
+        }
+        return false;
     }
 }

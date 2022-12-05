@@ -7,4 +7,6 @@ public class MainMenuClienteController {
     public MainMenuClienteController(MainMenuCliente view) {
         this.view = view;
     }
+
+
 }

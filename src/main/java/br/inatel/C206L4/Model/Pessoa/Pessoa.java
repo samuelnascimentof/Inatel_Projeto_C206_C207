@@ -1,4 +1,7 @@
-package br.inatel.C206L4.Model;
+package br.inatel.C206L4.Model.Pessoa;
+
+import br.inatel.C206L4.Model.Endereco;
+import br.inatel.C206L4.Model.Telefone;
 
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
@@ -9,21 +12,27 @@ public abstract class Pessoa {
     private String sobrenome;
     private long cpf;
     private LocalDate dataNascimento;
-    private Endereco endereco;
-    private Map<Integer, Telefone> contatos;
 
-    public Pessoa(String nome, String sobrenome, long cpf, LocalDate dataNascimento, Endereco endereco, Telefone[] contatos) {
+    private Endereco endereco;
+
+    private Map<Integer, Telefone> contatos;
+    protected int senha;
+
+    public Pessoa(String nome, String sobrenome, long cpf, LocalDate dataNascimento, int senha, Endereco endereco, Telefone[] contatos) {
         this.nome = nome;
         this.sobrenome = sobrenome;
         this.cpf = cpf;
         this.dataNascimento = dataNascimento;
         this.endereco = endereco;
+        this.senha = senha;
 
-        this.contatos = new HashMap<>();
-        int i = 1;
-        for (Telefone contato : contatos) {
-            this.contatos.put(i, contato);
-            i++;
+        if (contatos != null) {
+            this.contatos = new HashMap<>();
+            int i = 1;
+            for (Telefone contato : contatos) {
+                this.contatos.put(i, contato);
+                i++;
+            }
         }
     }
 
@@ -83,6 +92,21 @@ public abstract class Pessoa {
         return listaContatos.toString();
     }
 
+    public void setEndereco(Endereco endereco) {
+        this.endereco = endereco;
+    }
+
+    public void setContatos(Telefone[] contatos) {
+        if (contatos != null) {
+            this.contatos = new HashMap<>();
+            int i = 1;
+            for (Telefone contato : contatos) {
+                this.contatos.put(i, contato);
+                i++;
+            }
+        }
+    }
+
     public String getNome() {
         return nome;
     }
@@ -101,5 +125,9 @@ public abstract class Pessoa {
 
     public Endereco getEndereco() {
         return endereco;
+    }
+
+    public int getSenha() {
+        return senha;
     }
 }

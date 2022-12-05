@@ -1,6 +1,6 @@
 package br.inatel.C206L4.Model;
 
-import br.inatel.C206L4.Model.Funcionario.Funcionario;
+import br.inatel.C206L4.Model.Pessoa.Funcionario.Funcionario;
 
 import java.util.*;
 

@@ -4,33 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67cb6f71-b2f1-4899-a9c1-eceb26a0d579" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/inatel/C206L4/AppCliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/inatel/C206L4/AppFuncionario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/inatel/C206L4/Controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/inatel/C206L4/Controller/MainMenuClienteController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/inatel/C206L4/DAO/DatabaseConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/inatel/C206L4/DAO/DatabaseController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/inatel/C206L4/Model/Agencia.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/inatel/C206L4/Model/Autenticavel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/inatel/C206L4/Model/Cliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/inatel/C206L4/Model/Conta.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/inatel/C206L4/Model/Endereco.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/inatel/C206L4/Model/Funcionario/Caixa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/inatel/C206L4/Model/Funcionario/Funcionario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/inatel/C206L4/Model/Funcionario/Gerente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/inatel/C206L4/Model/Funcionario/Seguranca.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/inatel/C206L4/Model/Pessoa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/inatel/C206L4/Model/Telefone.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/inatel/C206L4/Model/Transacao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/inatel/C206L4/Util/ConsoleUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/inatel/C206L4/View/Login.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/inatel/C206L4/View/MainMenuCliente.java" afterDir="false" />
+    <list default="true" id="67cb6f71-b2f1-4899-a9c1-eceb26a0d579" name="Changes" comment="Initial commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/inatel/C206L4/Exception/AgenciaInexistenteException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/inatel/C206L4/Exception/ContaInexistenteException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/inatel/C206L4/Exception/PessoaInexistenteException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/inatel/C206L4/Exception/SaldoInsuficienteException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/inatel/C206L4/View/MainMenuGerente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/inatel/C206L4/AppFuncionario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/inatel/C206L4/Controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/inatel/C206L4/Controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/inatel/C206L4/Controller/MainMenuClienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/inatel/C206L4/Controller/MainMenuClienteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/inatel/C206L4/DAO/DatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/inatel/C206L4/DAO/DatabaseConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/inatel/C206L4/DAO/DatabaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/inatel/C206L4/DAO/DatabaseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/inatel/C206L4/Model/Agencia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/inatel/C206L4/Model/Agencia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/inatel/C206L4/Model/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/inatel/C206L4/Model/Pessoa/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/inatel/C206L4/Model/Conta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/inatel/C206L4/Model/Conta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/inatel/C206L4/Model/Funcionario/Caixa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/inatel/C206L4/Model/Pessoa/Funcionario/Caixa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/inatel/C206L4/Model/Funcionario/Funcionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/inatel/C206L4/Model/Pessoa/Funcionario/Funcionario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/inatel/C206L4/Model/Funcionario/Gerente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/inatel/C206L4/Model/Pessoa/Funcionario/Gerente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/inatel/C206L4/Model/Funcionario/Seguranca.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/inatel/C206L4/Model/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/inatel/C206L4/Model/Pessoa/Pessoa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/inatel/C206L4/Model/Transacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/inatel/C206L4/Model/Transacao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/inatel/C206L4/View/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/inatel/C206L4/View/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/inatel/C206L4/View/MainMenuCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/inatel/C206L4/View/MainMenuCliente.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +71,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="br.inatel.C206L4.Exception" />
+      <recent name="br.inatel.C206L4.View" />
       <recent name="br.inatel.C206L4.Model" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -86,7 +84,20 @@
       <recent name="br.inatel.C206L4.Model" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestaPessoa">
+  <component name="RunManager" selected="Application.AppCliente">
+    <configuration name="AppCliente" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.inatel.C206L4.AppCliente" />
+      <module name="ProjetoBanco" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.inatel.C206L4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DatabaseTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.inatel.C206L4.DAO.DatabaseTest" />
       <module name="ProjetoBanco" />
@@ -118,7 +129,7 @@
       <module name="ProjetoBanco" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="br.inatel.C206L4.Model.Funcionario.*" />
+          <option name="PATTERN" value="br.inatel.C206L4.Model.Pessoa.Funcionario.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -142,28 +153,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestPessoa" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ProjetoBanco" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.inatel.C206L4.Model.Funcionario.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="br.inatel.C206L4.Model" />
-      <option name="MAIN_CLASS_NAME" value="br.inatel.C206L4.Model.TestPessoa" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AppCliente" />
         <item itemvalue="Application.TestaPessoa" />
         <item itemvalue="Application.DatabaseTest" />
         <item itemvalue="Application.LoginTest" />
         <item itemvalue="JUnit.LoginTest.loginScreen" />
-        <item itemvalue="JUnit.TestPessoa" />
       </list>
     </recent_temporary>
   </component>
@@ -176,6 +172,14 @@
       <option name="presentableId" value="Default" />
       <updated>1667700939724</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <created>1669852988199</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1669852988199</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -189,20 +193,8 @@
       </map>
     </option>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/br/inatel/C206L4/Model/TestaPessoa.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/br/inatel/C206L4/Model/TestaPessoa.java</url>
-          <line>35</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
   </component>
 </project>

@@ -1,10 +1,9 @@
-package br.inatel.C206L4.Model.Funcionario;
+package br.inatel.C206L4.Model.Pessoa.Funcionario;
 
 import br.inatel.C206L4.Model.Endereco;
-import br.inatel.C206L4.Model.Pessoa;
+import br.inatel.C206L4.Model.Pessoa.Pessoa;
 import br.inatel.C206L4.Model.Telefone;
 
-import java.sql.Time;
 import java.time.LocalDate;
 import java.util.*;
 
@@ -30,8 +29,8 @@ public abstract class Funcionario extends Pessoa {
         return horarioSaida;
     }
 
-    public Funcionario(String nome, String sobrenome, long cpf, LocalDate dataNascimento, Endereco endereco, Telefone[] contatos) {
-        super(nome, sobrenome, cpf, dataNascimento, endereco, contatos);
+    public Funcionario(String nome, String sobrenome, long cpf, LocalDate dataNascimento, int senha, Endereco endereco, Telefone[] contatos) {
+        super(nome, sobrenome, cpf, dataNascimento, senha, endereco, contatos);
     }
 
     public void baterPonto(){
